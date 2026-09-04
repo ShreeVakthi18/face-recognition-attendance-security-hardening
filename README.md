@@ -8,12 +8,10 @@ The assessment identified and remediated **10 application security vulnerabiliti
 
 ## What Makes This Different
 
-Most student security write-ups stop at "found X vulnerabilities." This one goes a step further:
-
-- **Real production codebase** — not a deliberately vulnerable practice app (DVWA, Juice Shop, etc.), but an actual internal company system with real users and real data.
-- **Dual-backend hardening** — Flask and Node.js/Express don't share a security model, so each vulnerability class had to be diagnosed and fixed in its own stack, doubling the surface area covered.
-- **Before/after proof for every fix** — each vulnerability includes a screenshot of the exploit condition and a screenshot of the patched behavior, not just a code diff.
-- **Load-tested, not just code-reviewed** — the rate-limiting and timing-attack fixes were verified under load (autocannon) rather than assumed correct from the code alone.
+- **Existing company system** — security assessment and hardening were performed on an existing face recognition attendance application rather than a deliberately vulnerable practice application.
+- **Dual-backend security** — assessed and hardened both Flask and Node.js/Express components, covering vulnerabilities across different application layers.
+- **Before/after evidence** — documented the identified vulnerabilities, remediation steps, and patched behavior with screenshots throughout the assessment.
+- **Practical security validation** — security controls were tested to verify that the implemented mitigations behaved as expected.
 
 ---
 
