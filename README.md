@@ -59,12 +59,12 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation 
 
-![Mitigation Screenshot](./screenshots/1.png)
-![Mitigation Screenshot](./screenshots/2.png)
+![Mitigation Screenshot](./screenshots/Cross_Tab_mitigation_1.png)
+![Mitigation Screenshot](./screenshots/Cross_Tab_mitigation_2.png)
 
 ## Patching
 
-![Patching Screenshot](./screenshots/3.png)
+![Patching Screenshot](./screenshots/Cross_Tab__patching.png)
 ---
 
 ## 2. Information Disclosure
@@ -75,11 +75,11 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation 
 
-![Mitigation Screenshot](./screenshots/5.png)
+![Mitigation Screenshot](./screenshots/Information_Disclosure_mitigation.png)
 
 ## Patching 
 
-![Patching Screenshot](./screenshots/6.png)
+![Patching Screenshot](./screenshots/Information_Disclosure_patching.png)
 
 
 ---
@@ -92,11 +92,11 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation
 
-![Mitigation Screenshot](./screenshots/7.png)
+![Mitigation Screenshot](./screenshots/Rate_limiting_mitigation.png)
 
 ## Patching 
 
-![Patching Screenshot](./screenshots/8.png)
+![Patching Screenshot](./screenshots/Rate_limiting_patching.png)
 
 ---
 
@@ -108,17 +108,17 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation 
 
-![Mitigation Screenshot](./screenshots/9.png)
+![Mitigation Screenshot](./screenshots/Timing_Attack_mitigation.png)
 
 ## Patching
 
 ## Wrong password 
 
-![Patching Screenshot](./screenshots/10.png)
+![Patching Screenshot](./screenshots/Timing_Attack_patching_1.png)
 
 ## Correct password 
 
-![Patching Screenshot](./screenshots/11.png)
+![Patching Screenshot](./screenshots/Timing_Attack_patching_2.png)
 
 ---
 
@@ -132,15 +132,15 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## People.js
 
-![Mitigation Screenshot](./screenshots/12.png)
+![Mitigation Screenshot](./screenshots/Input_Validation_mitigation_1 .png)
 
 ## Attendance.js
 
-![Mitigation Screenshot](./screenshots/13.png)
+![Mitigation Screenshot](./screenshots/Input_Validation_mitigation_2.png)
 
 ## Patching 
 
-![Patching Screenshot](./screenshots/14.png)
+![Patching Screenshot](./screenshots/Input_Validation_patching.png)
 ---
 
 ## 6. Missing Security Logs / Audit Trail
@@ -151,17 +151,17 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation
 
-![Mitigation Screenshot](./screenshots/15.png)
+![Mitigation Screenshot](./screenshots/Audit_Trail_mitigation.png)
 
 ## Patching 
 
 ## combined.log
 
-![Patching Screenshot](./screenshots/16.png)
+![Patching Screenshot](./screenshots/Audit_Trail_patching_1.png)
 
 ## Error.log
 
-![Patching Screenshot](./screenshots/17.png)
+![Patching Screenshot](./screenshots/Audit_Trail_patching_2.png)
 
 ---
 
@@ -173,11 +173,11 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation 
 
-![Mitigation Screenshot](./screenshots/18.png)
+![Mitigation Screenshot](./screenshots/ObjectId_Injection_mitigation.png)
 
 ## Patching 
 
-![Patching Screenshot](./screenshots/19.png)
+![Patching Screenshot](./screenshots/ObjectId_Injection_patching.png)
 
 
 ---
@@ -190,11 +190,11 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation 
 
-![Mitigation Screenshot](./screenshots/21.png)
+![Mitigation Screenshot](./screenshots/Flask_Debug_Mode_mitigation.png)
 
 ## Patching 
 
-![Patching Screenshot](./screenshots/22.png)
+![Patching Screenshot](./screenshots/Flask_Debug_Mode_patching.png)
 
 
 ---
@@ -207,11 +207,11 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation 
 
-![Mitigation Screenshot](./screenshots/23.png)
+![Mitigation Screenshot](./screenshots/No_Helmet_mitigation.png)
 
 ## Patching 
 
-![Patching Screenshot](./screenshots/24.png)
+![Patching Screenshot](./screenshots/No_Helmet_patching.png)
 
 ---
 
@@ -223,11 +223,11 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Mitigation
 
-![Mitigation Screenshot](./screenshots/25.png)
+![Mitigation Screenshot](./screenshots/Large_Request_mitigation.png)
 
 ## Patching  
 
-![Patching  Screenshot](./screenshots/26.png)
+![Patching  Screenshot](./screenshots/Large_Request_patching.png)
 
 ---
 
