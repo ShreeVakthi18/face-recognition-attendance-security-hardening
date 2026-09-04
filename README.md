@@ -112,7 +112,12 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Remediation Evidence
 
+## Wrong password 
+
 ![Remediation Screenshot](./screenshots/10.png)
+
+## Correct password 
+
 ![Remediation Screenshot](./screenshots/11.png)
 
 ---
@@ -129,7 +134,12 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Remediation Evidence
 
+## People.js
+
 ![Remediation Screenshot](./screenshots/13.png)
+
+## Attendance.js
+
 ![Remediation Screenshot](./screenshots/14.png)
 ---
 
@@ -145,7 +155,12 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Remediation Evidence
 
+## combined.log
+
 ![Remediation Screenshot](./screenshots/16.png)
+
+## Error.log
+
 ![Remediation Screenshot](./screenshots/17.png)
 
 ---
