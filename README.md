@@ -57,9 +57,7 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Implemented a `storage` event listener. On logout, a `logout-event` key is written to `localStorage`; every other open tab detects the change, clears its session state, and redirects to the login page.
 
-<!-- ![Before: multiple tabs still logged in after logout](./screenshots/01-before.png) -->
-<!-- ![After: all tabs redirected instantly on logout](./screenshots/01-after.png) -->
-
+![Remediation Screenshot](./screenshots/1.png)
 ---
 
 ## 2. Information Disclosure
