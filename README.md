@@ -1,8 +1,19 @@
 # Face Recognition Attendance System — Security Assessment & Hardening
 
-Security assessment and hardening of a face recognition-based attendance system built with **Flask, Node.js/Express, React, and MongoDB**.
+Security assessment and hardening of a face recognition-based attendance system built with **Flask, Node.js/Express, React, and MongoDB**. This assessment was conducted on a production system used internally by **ProJenius Innovation Technology Pvt. Ltd.** as part of a Cyber Security Internship engagement.
 
 The assessment identified and remediated **10 application security vulnerabilities** across authentication, session management, input validation, database security, API security, and application configuration.
+
+---
+
+## What Makes This Different
+
+Most student security write-ups stop at "found X vulnerabilities." This one goes a step further:
+
+- **Real production codebase** — not a deliberately vulnerable practice app (DVWA, Juice Shop, etc.), but an actual internal company system with real users and real data.
+- **Dual-backend hardening** — Flask and Node.js/Express don't share a security model, so each vulnerability class had to be diagnosed and fixed in its own stack, doubling the surface area covered.
+- **Before/after proof for every fix** — each vulnerability includes a screenshot of the exploit condition and a screenshot of the patched behavior, not just a code diff.
+- **Load-tested, not just code-reviewed** — the rate-limiting and timing-attack fixes were verified under load (autocannon) rather than assumed correct from the code alone.
 
 ---
 
