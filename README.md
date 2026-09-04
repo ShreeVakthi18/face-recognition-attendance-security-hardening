@@ -6,6 +6,12 @@ The assessment identified and remediated **10 application security vulnerabiliti
 
 ---
 
+## Real-World Experience
+
+This project provided hands-on experience in assessing and hardening an **existing company application**, identifying real application security weaknesses, implementing practical security controls, and validating the effectiveness of the remediation.
+
+---
+
 ## What Makes This Different
 
 - **Existing company system** — security assessment and hardening were performed on an existing face recognition attendance application rather than a deliberately vulnerable practice application.
