@@ -243,3 +243,42 @@ This project provided hands-on experience in assessing and hardening an **existi
 ## Disclaimer
 
 This project was conducted on a system built and controlled by the author for educational and defensive security purposes. No unauthorized testing was performed.
+
+---
+
+## Methodology
+
+The assessment followed a structured process for each identified area:
+
+1. **Reconnaissance** — reviewed the existing codebase (Flask backend, Express backend, React frontend) to map authentication flows, session handling, and data validation logic.
+2. **Vulnerability Identification** — analyzed each layer for weaknesses in authentication, session management, input handling, database interaction, and HTTP response behavior.
+3. **Impact Analysis** — assessed the practical exploitability and consequence of each flaw (e.g. brute-force feasibility, information disclosure, crash conditions).
+4. **Remediation** — implemented fixes scoped to each vulnerability, following secure coding practices appropriate to each backend (Flask vs. Express).
+5. **Verification** — tested each fix directly against the original flaw (e.g. repeated login attempts to confirm lockout, malformed payloads to confirm rejection) to confirm the mitigation behaved as intended.
+
+---
+
+## Key Takeaways
+
+- Session state should never be assumed consistent across browser contexts — cross-tab and cross-device session handling needs explicit synchronization.
+- Default credentials and pre-filled fields, even in internal admin tools, meaningfully reduce attacker effort and should never ship to production.
+- Rate limiting and constant-time comparisons are cheap to implement and close off entire classes of brute-force and side-channel attacks.
+- Structured logging is not optional — without it, incident response and post-breach investigation become guesswork.
+- Debug modes and verbose error handling are a common and easily overlooked path to full compromise if left enabled in production.
+
+---
+
+## Future Improvements
+
+- Add automated security regression tests (e.g. Jest/Pytest) to continuously verify each fix against reintroduction.
+- Integrate a CI security scanning step (e.g. Bandit for Flask, npm audit for Express) to catch new vulnerabilities pre-merge.
+- Extend audit logging to a centralized, queryable store rather than flat log files.
+- Add multi-factor authentication for admin accounts as a defense-in-depth measure beyond rate limiting.
+
+---
+
+## Author
+
+**Shree Vakthi S**
+B.E. Computer Science Engineering (Cybersecurity), SRM Madurai College of Engineering and Technology
+Cyber Security Intern — ProJenius Innovation Technology Pvt. Ltd.
