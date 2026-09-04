@@ -36,7 +36,7 @@ Security assessment and hardening of a face recognition based attendance system 
 
 ## Vulnerability Summary
 
-| # | Vulnerability | Impact | Fix |
+| S. No.| Vulnerability | Impact | Fix |
 |---|---|---|---|
 | 1 | Cross-Tab Session Desynchronization | Logging out on one tab left other open tabs still authenticated, exposing data on unattended screens | Browser storage event listener syncs logout across all open tabs instantly |
 | 2 | Information Disclosure (default username) | Login page auto-filled `admin`, halving the brute-force search space for attackers | Removed hardcoded username; both username and password must be entered manually |
