@@ -2,8 +2,7 @@
 
 Security assessment and hardening of a face recognition based attendance system built with a **Flask**, **Node.js/Express**, and **MongoDB** stack. Identified and remediated **10 application security vulnerabilities** spanning authentication, session management, input validation, database security, and API security.
 
-<!-- Optional: add a banner/cover image of the app dashboard here -->
-<!-- ![Dashboard](./screenshots/dashboard.png) -->
+
 
 ---
 
