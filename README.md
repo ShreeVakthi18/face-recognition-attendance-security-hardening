@@ -57,7 +57,9 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Implemented a `storage` event listener. On logout, a `logout-event` key is written to `localStorage`; every other open tab detects the change, clears its session state, and redirects to the login page.
 
-![Remediation Screenshot](./screenshots/1.png)
+![Patching Screenshot](./screenshots/1.png)
+![Remediation Screenshot](./screenshots/2.png)
+![Remediation Screenshot](./screenshots/3.png)
 ---
 
 ## 2. Information Disclosure
@@ -66,8 +68,9 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Removed the hardcoded username. Both username and password fields are now blank by default, requiring full credentials to be entered manually.
 
-<!-- ![Before: username pre-filled with 'admin'](./screenshots/02-before.png) -->
-<!-- ![After: blank login form](./screenshots/02-after.png) -->
+![Patching Screenshot](./screenshots/5.png)
+![Remediation Screenshot](./screenshots/6.png)
+
 
 ---
 
@@ -77,7 +80,8 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Added `express-rate-limit` middleware — 5 failed login attempts from an IP trigger a 15-minute lockout, with a clear error response.
 
-<!-- ![Rate limit triggered after 5 failed attempts](./screenshots/03-lockout.png) -->
+![Patching Screenshot](./screenshots/7.png)
+![Remediation Screenshot](./screenshots/8.png)
 
 ---
 
@@ -87,8 +91,9 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Replaced standard comparisons with a constant-time comparison (`crypto.timingSafeEqual` over hashed values) so response time is identical regardless of where a mismatch occurs.
 
-<!-- ![Load test: response latency before fix](./screenshots/04-before-latency.png) -->
-<!-- ![Load test: response latency after fix](./screenshots/04-after-latency.png) -->
+![Patching Screenshot](./screenshots/9.png)
+![Remediation Screenshot](./screenshots/10.png)
+![Remediation Screenshot](./screenshots/11.png)
 
 ---
 
@@ -98,8 +103,9 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Enforced strict validation — the face descriptor must be an array of exactly 128 floating-point values, and the total payload is capped at 2MB.
 
-<!-- ![Rejected invalid face descriptor payload — 400 response](./screenshots/05-validation.png) -->
-
+![Patching Screenshot](./screenshots/12.png)
+![Remediation Screenshot](./screenshots/13.png)
+![Remediation Screenshot](./screenshots/14.png)
 ---
 
 ## 6. Missing Security Logs / Audit Trail
@@ -108,8 +114,9 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Added structured logging with Winston, splitting output into `combined.log` (all events) and `error.log` (failures and crashes only).
 
-<!-- ![Sample combined.log entry](./screenshots/06-combined-log.png) -->
-<!-- ![Sample error.log entry](./screenshots/06-error-log.png) -->
+![Patching Screenshot](./screenshots/15.png)
+![Remediation Screenshot](./screenshots/16.png)
+![Remediation Screenshot](./screenshots/17.png)
 
 ---
 
@@ -119,8 +126,9 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Added ID format validation (must be a 24-character hex string) with proper exception handling — invalid IDs now return a clean `400 Bad Request`.
 
-<!-- ![Before: crash / leaked stack trace on malformed ID](./screenshots/07-before.png) -->
-<!-- ![After: clean 400 response](./screenshots/07-after.png) -->
+![Patching Screenshot](./screenshots/18.png)
+![Remediation Screenshot](./screenshots/19.png)
+
 
 ---
 
@@ -130,7 +138,9 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Hardcoded `debug=False` as the default; debug mode only activates when `FLASK_ENV` is explicitly set to `development`.
 
-<!-- ![Server startup log confirming debug=False](./screenshots/08-debug-off.png) -->
+![Patching Screenshot](./screenshots/21.png)
+![Remediation Screenshot](./screenshots/22.png)
+
 
 ---
 
@@ -140,7 +150,8 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Added Helmet.js middleware globally, injecting 15 defensive HTTP security headers into every response.
 
-<!-- ![Response headers after Helmet.js applied](./screenshots/09-headers.png) -->
+![Patching Screenshot](./screenshots/23.png)
+![Remediation Screenshot](./screenshots/24.png)
 
 ---
 
@@ -150,7 +161,8 @@ Security assessment and hardening of a face recognition based attendance system 
 
 **The Fix:** Reduced the body size limit to 1MB. Oversized requests are now rejected instantly with a `413 Payload Too Large` response.
 
-<!-- ![413 response for oversized payload](./screenshots/10-payload-limit.png) -->
+![Patching Screenshot](./screenshots/25.png)
+![Remediation Screenshot](./screenshots/26.png)
 
 ---
 
